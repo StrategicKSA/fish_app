@@ -10,7 +10,7 @@ dotenv.config();
 const app = express();
 
 //creating a port for the server
-const PORT = process.env.PORT ?? 5000;
+const PORT = process.env.PORT?? 5000;
 //creating a routesss
 app.get('/', (req, res) => {
     res.send("Easy On Me")
